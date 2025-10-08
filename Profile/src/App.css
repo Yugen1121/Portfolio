@@ -1,0 +1,80 @@
+
+.mainHeader {
+
+    background: linear-gradient(45deg, #B6B5D6, #B6B5D6, #B6B5D6, #B6B5D6, violet);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.color1{
+    background: linear-gradient(45deg, #03f924, #fc0223, rgb(0, 234, 255), rgb(255, 12, 255), violet);
+    background-size: 200% 100%;
+    padding:0px;
+    margin: 0px
+}
+
+
+.subCard {
+  height: 100%;
+  display: flex;
+  flex: 1 1 0%;
+
+}
+
+.bg1{
+    background: url("assets/Background.jpg");
+}
+
+
+.Hl1{
+    background-image: url("assets/Bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Shadow{
+    filter: drop-shadow(0 4px 8px yellow)
+}
+
+.card{
+    min-height: 50vh;
+    max-height: 50vh;
+    max-width: 30vw;
+    min-width: 30vw;
+    background-color: rgba(0, 28, 61, 0.4);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: -10px 8px 20px #978942;
+    backdrop-filter: blur(8px) saturate(100%);
+    -webkit-backdrop-filter: blur(8px) saturate(100%);
+    
+}
+
+h1 {
+  font-family: "Bold";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 43px;
+  color: #F5B727;
+  -webkit-text-stroke: 0.5px #FF9900;
+}
+
+h3 {
+  font-family: "Bold";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  
+}
