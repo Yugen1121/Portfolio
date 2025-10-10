@@ -54,6 +54,11 @@
     
 }
 
+.Button {
+    min-height: 8vh;
+    min-width: 20wh;
+}
+
 h1 {
   font-family: "Bold";
   font-weight: 400;
@@ -76,5 +81,9 @@ h3 {
   font-weight: 500;
   font-style: normal;
   font-variation-settings:"wdth" 100;
-  
+  font-size: 30px;
+}
+
+.Font {
+    font-size: 40px;
 }

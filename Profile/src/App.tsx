@@ -7,6 +7,9 @@ import { Route, Routes } from 'react-router-dom'
 // Compoonenets
 import Home from "./Pages/Home"
 import Ripples from "./Pages/Ripples/index.tsx"
+import Java from "./Pages/Java/index.tsx"
+import Python from "./Pages/Python/index.tsx"
+import React  from './Pages/React/index.tsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +20,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path="/Ripples" element={<Ripples/>} />
+          <Route path="/Java" element={<Java />}/>
+          <Route path="/Python" element={<Python />} />
+          <Route path="/React" element ={<React />} />
         </Routes>
       
     </div>
