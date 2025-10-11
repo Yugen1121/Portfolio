@@ -5,9 +5,8 @@ import ModifiersPlugin from "gsap/all"
 import Whale from "../../assets/FloatingWhale.png"
 import Koi from "../../assets/TwoKoi.png"
 import Sun from "../../assets/Sun.png"
-import { ReactNode, useEffect, useRef, useState } from "react";
 import Cat from "../../assets/PeakingCat.png"
-import Clouds from "../../assets/Clouds.png"
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ModifiersPlugin);
@@ -37,7 +36,7 @@ function Home(){
     // Main menue page
     const p1 = <>
         <ul>
-        <li className="Button" onClick={handleOnClickPython}><i className="fa-brands fa-python text-6xl"></i>Python projects</li>
+        <li onClick={handleOnClickPython}><i className="fa-brands fa-python text-6xl"></i>Python projects</li>
         <li onClick={handleOnClickReact}><i className="fa-brands fa-react text-6xl" ></i>React projects</li>
         <li onClick={handelOnClickJava}><i className="fa-brands fa-java text-6xl"></i>Java projects</li>
         <li>Certificates</li>
@@ -46,11 +45,11 @@ function Home(){
         </ul>
     </>
 
-    const [menue, updateMenue]= useState<ReactNode>(p1)
+    const [menue, updateMenue]= useState(p1)
 
     useEffect(()=>{
         gsap.to(whaleRef.current, {
-            x: window.innerWidth+300,
+            x: window.innerWidth,
             duration: 15,
             ease: "none",
             repeat: -1,
@@ -93,7 +92,7 @@ function Home(){
     return <>
         <div
             className={
-                DyClass("relative h-screen w-screen Hl1 z-0")
+                DyClass("relative h-[100vh] w-[100vw] Hl1 z-0")
             }
         >
             <div className="relative z-20">
@@ -112,8 +111,8 @@ function Home(){
                 <img src={Sun} className="absolute "/>
             </div>
 
-            <div className="absolute z-50 h-screen w-screen flex">
-                <div className="flex-1 flex justify-center items-center flex-col ">
+            <div className="absolute z-50 h-screen w-screen flex flex-wrap">
+                <div className="flex-[1_0_400px] flex justify-center items-center flex-col ">
                         <div className="w-[25vw]">
                             <h2>
                                 Yugen Limbu
@@ -130,7 +129,7 @@ function Home(){
                         </div>
                 
                 </div>
-                <div className=" flex-1 flex justify-center items-center ">
+                <div className=" flex-[1_0_300px]  flex justify-center items-center ">
                     <div className="">
                         <h3>
                             Experience

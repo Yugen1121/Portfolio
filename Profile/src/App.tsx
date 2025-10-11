@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <div style={{display:"flex", justifyContent: "center", flexDirection: "column", alignItems:"center", width: "100vw"}}>
+      <div style={{display:"flex", justifyContent: "center", flexDirection: "column", alignItems:"center", width: "100vw", height: "100vh"}}>
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path="/Ripples" element={<Ripples/>} />

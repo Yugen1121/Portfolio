@@ -87,3 +87,42 @@ h3 {
 .Font {
     font-size: 40px;
 }
+
+
+/*
+Element	Color	Hex
+Background	Light yellow / beige	#ffffe0
+Text (normal)	Black	#000000
+Keywords	Dark blue	#0000ff
+Strings	Dark green	#008000
+Comments	Red	#ff0000
+Numbers	Purple	#800080
+Built-ins / defs	Dark cyan	#008b8b
+Cursor (caret)	Black	#000000
+Selection	Light blue highlight	#c0ddff (approx)
+*/
+.PyFont{
+  font-family: 'Courier New', Courier, monospace;
+}
+.PyKey{
+  
+  color: #0000ff;
+
+}
+
+.PyBuiltIn{
+  color: #008b8b;
+}
+
+.PyComments{
+  color: #ff0000;
+}
+
+.Header {
+  height: 8rem;
+}
+
+.MainLogo{
+  height: 7rem;
+  width: 7 trem;
+}
