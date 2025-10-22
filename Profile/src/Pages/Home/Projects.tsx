@@ -1,26 +1,31 @@
 import ProjectCard from "./ProjectCard";
+import "../../App.css"
+import ProjectTemplate from "./ProjectTemplate";
 function Projects(){
 
     return <>
-        <h1>Projects</h1>
-        <div className="w-[70%]  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid gap-8">
-            <div className="">
-                <ProjectCard Content={{header: "Postfolio", body: "sdnjfdsknfdsnjkabdjasbdjksabdksadjsakbdkasjdsanxjnhancbuehakcnshknbackjsbajkwbakjsnbckjanskjbcjsk", git: "sjfndsfnjk"}} />
-            </div>
-            <div>
-                <ProjectCard Content={{header: "Postfolio", body: "sdnjfdsknfdsnjk", git: "sjfndsfnjk"}} />
-            </div>
-            <div>
-                <ProjectCard Content={{header: "Postfolio", body: "sdnjfdsknfdsnjk", git: "sjfndsfnjk"}} />
-            </div>
-            <div>
-                <ProjectCard Content={{header: "Postfolio", body: "sdnjfdsknfdsnjk", git: "sjfndsfnjk"}} />
-            </div>
-            <div>
-                <ProjectCard Content={{header: "Postfolio", body: "sdnjfdsknfdsnjk", git: "sjfndsfnjk"}} />
-            </div>
-            
+        <h1 className="text-[var(--color-9)] pb-20">Proje<span className="Highlight">c</span>ts</h1>
+
+        <div className="ProjectContainer">
+            <ProjectTemplate>
+                <h1>
+                    FitnessHUB
+                </h1>
+                <div>
+                    akdsladnskndlksanlk
+                </div>
+            </ProjectTemplate>
+            <ProjectTemplate>
+                <div>
+                    FitnessHUb
+                </div>
+                <div>
+                    akdsladnskndlksanlk
+                </div>
+            </ProjectTemplate>
         </div>
+
+        
     </>
 }
 
