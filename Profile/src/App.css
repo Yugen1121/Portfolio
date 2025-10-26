@@ -1,3 +1,15 @@
+:root{
+  --color-1: #e5e4db;
+  --color-2: #cecdc5;
+  --color-3: #b7b6af;
+  --color-4: #a0a099;
+  --color-5: #898983;
+  --color-6: #73726e;
+  --color-7: #5c5b58;
+  --color-8: #454442;
+  --color-9: #2e2e2c;
+  --color-10: #171716;
+}
 
 .mainHeader {
 
@@ -63,16 +75,14 @@ h1 {
   font-family: "Bold";
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 68px;
+
 }
 
 h2 {
-  font-family: "Dancing Script", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 43px;
-  color: #F5B727;
-  -webkit-text-stroke: 0.5px #FF9900;
+  font-size: 48px;
 }
 
 h3 {
@@ -83,24 +93,15 @@ h3 {
   font-variation-settings:"wdth" 100;
   font-size: 30px;
 }
+.Highlight{
+  color: #B91C1C;
+}
 
 .Font {
     font-size: 40px;
 }
 
 
-/*
-Element	Color	Hex
-Background	Light yellow / beige	#ffffe0
-Text (normal)	Black	#000000
-Keywords	Dark blue	#0000ff
-Strings	Dark green	#008000
-Comments	Red	#ff0000
-Numbers	Purple	#800080
-Built-ins / defs	Dark cyan	#008b8b
-Cursor (caret)	Black	#000000
-Selection	Light blue highlight	#c0ddff (approx)
-*/
 .PyFont{
   font-family: 'Courier New', Courier, monospace;
 }
@@ -125,4 +126,230 @@ Selection	Light blue highlight	#c0ddff (approx)
 .MainLogo{
   height: 7rem;
   width: 7 trem;
+}
+
+
+.ScreenSize {
+  height: 100vh;
+  width: 100vw;
+}
+
+.Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sCard {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--color-2);
+  font-size: 28px;
+}
+
+.sCard:hover {
+  opacity: 0.8;
+}
+
+.navButton {
+  margin-right: 8px;
+}
+
+.navBar{
+  background: #051821;
+}
+
+.bg1{
+
+  background: linear-gradient(90deg, #5c5b58 20%, #454442 50%, #2e2e2c 80%, #171718 100%);
+}
+
+.bg2 {
+  background: var(--color-4);
+}
+
+.pfp {
+  flex: 1;
+  display: flex;
+  background: var(--color-10);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  justify-content: start;
+  align-items: end;
+
+
+}
+
+.AboutLayout1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.AboutContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 10%;
+  align-items: left;
+  gap: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+.Focus {
+  display: inline-block;
+  width: fit-content;
+  transition: transform 0.3s ease;
+  vertical-align: center;
+}
+
+.Focus:hover {
+  transform: scale(1.04);
+}
+
+.Focus2{
+  display: inline-block;
+  width: fit-content;
+  transition: transform 0.3s ease;
+  vertical-align: center;
+}
+
+
+.Focus2:hover {
+  box-shadow: 2px 2px 12px var(--color-red-600);
+  transform: scale(1.1);
+}
+
+.ProjectNPContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 7.5% 0 7.5%;
+  gap: 4rem;
+}
+
+.ProjeectRContainer {
+  width: 100%;
+  gap: 4rem;
+}
+
+.ProjectSubContainer {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.bg3 {
+  background: var(--color-8);
+  clip-path: polygon(30% 0, 100% 100%, 80% 100%, 0 30%);
+}
+
+.bg4 {
+  background: url("./assets/Skills1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg5 {
+  background: var(--color-8);
+  clip-path: circle(30% 0, 100% 100%, 80% 100%, 0 30%);
+}
+
+.div1 {
+  border-color: var(--color-4);
+  border-width: 8px;
+  background: var(--color-8);
+  padding: 15px;
+}
+.div2{
+  border-color: var(--color-4);
+  border-width: 8px;
+  background: var(--color-9);
+  color: var(--color-3);
+  padding: 15px;
+}
+
+.div3{
+  border-color: var(--color-8);
+  border-width: 8px;
+  background: var(--color-5);
+  color: var(--color-9);
+  padding: 15px;
+}
+
+
+
+
+.span2 {
+  grid-column: span 2;
+}
+
+
+.HeaderShadow1 {
+  box-shadow: 0px 4px 4px var(--color-red-800);
+}
+
+.Nav1 {
+  background: rgb(from var(--color-10) r g b / 0.3);
+  backdrop-filter: blur(10px);
+  padding: 4px 8rem 4px 8rem;
+  font-size: 20px;
+  color: var(--color-2);
+}
+
+.LText {
+  font-size: 120px;  
+}
+
+@media(max-width: 1200px){
+
+
+  .ProjectNPContainer {
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ProjectSubContainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Nav1 {
+  
+  padding: 4px 6rem 4px 6rem;
+  font-size: 22px;
+}
+  
+  
+
+}
+
+
+@media (max-width: 800px){
+
+  .LText {
+  font-size: 70px;  
+  }
+
+  .Nav1 {
+  padding: 4px 8px 4px 8px;
+  font-size: 22px;
+  }
+
+  .ProjectSubContainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
 }

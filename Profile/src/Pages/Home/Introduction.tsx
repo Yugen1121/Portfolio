@@ -1,52 +1,59 @@
-import { Button } from "@mui/material";
-import { Avatar } from "@mui/material";
-import Cat from "../../assets/Sun.png"
+import { useLayoutEffect, useRef } from "react";
+import "../../App.css"
+import DivBox from "../Components/divBox";
+import gsap from "gsap";
 
 function Introduction(){
-    return <>
-        <div className="flex flex-row flex-wrap-reverse justify-center items-center">
-            <div className="flex flex-col w-full mx-auto justify-center items-center">
-                <div>
-                    <div className="mx-atuo w-full m-[10px]">
-                        About Me
-                    </div>
-                    <p className="max-w-md w-full m-[10px]">
-                        I'm an aspiring Software engineer pursuing Bsc in Computer science specializing on Software Engineering at St Marys University.
-                        <br></br>
-                    </p>
-                    <div className="flex flex-wrap">
-                        <div className="sCard">London, UK</div>
-                        <a href="https://www.stmarys.ac.uk/" target="_blank" rel="noopener noreferrer">
-                        <div className="sCard">St Marys University</div>
-                        </a>
+    const focusRef = useRef<HTMLAnchorElement | null>(null)
 
-                    </div>
+    useLayoutEffect(()=>{
+        if (!focusRef.current) return;
+        
+        gsap.to(focusRef.current, {
+            
+
+            scale: 1.1,
+            duration: 1,
+            repeat: -1,
+            yoyo: true,
+        })
+    }, [])
+    return <>
+
+            
+                <div className="text-[var(--color-10)]">
+                    <h3>Hi, my name is</h3>
+                    <span className="Focus Highlight LText">
+                        Yugen Limbu
+                    </span>
                 </div>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-                <Avatar 
-            src={Cat}
-            sx={{width: {sm: "18rem" }, height: {sm: "18rem"}}}
-            />
-                <h1>
-                    Yugen Limbu
-                </h1>
-                <div>
+               
+                <h2 className="Focus text-[var(--color-3)]">
                     Software Developer | CS student 
-                </div>
-                <div className="flex flex-wrap">
-                    <a className="sCard">
+                </h2>
+                <div className="flex flex-wrap p-6 gap-3">
+                    
+                    
+                    <a ref={focusRef} className="sCard Focus" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yugen-limbu-aa869b33a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                        <i className="fa fa-linkedin-square"></i>   
                         LinkedIn
                     </a>
-                    <a className="sCard">
+                    
+                    
+                    <a className="sCard Focus" target="_blank"  rel="noopener noreferrer" href="https://github.com/Yugen1121">
+                        <i className="fa fa-github"></i>
                         GitHub
                     </a>
-                    <a className="sCard">
+                    
+                    
+                    <a className="sCard Focus" href="mailto:yugenlimbu777@2gamil.com">
+                        <i className="fa fa-envelope"></i>
                         Gmail
                     </a>
+                    
                 </div>
-            </div>
-        </div>
+
+    
     </>
 }
 

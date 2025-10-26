@@ -1,20 +1,23 @@
 import Tag from "../Components/SkillHighlighter.tsx"
-
+import "../../App.css"
+import bg1 from "../../assets/orchids.png"
+import Python from "../../assets/Python.png"
+import Orchid from "../../assets/orchids.png"
+import DivBox from "../Components/divBox.tsx"
 export default function Skills(){
+    const skills = ["TypeScript", "JacaScript", "Java", "Python", "Flask", "Django", "Frontened", "Backened", "React"]
+
     return <>
-    <div className="flex flex-col justify-center items-center">
-        <h1 className="mt-15">Skills</h1>
-        <div className="max-w-[80vw] flex flex-wrap m-20">
-            <Tag>
-                Hello
-            </Tag>
-            <Tag>
-                Hello
-            </Tag>
-            <Tag>
-                Hello
-            </Tag>
-        </div>
-    </div>
+        
+            <h1 className="Highlight red">SKILLS</h1>
+            <div className="w-[70%]">
+                <ul className="flex flex-row none justify-center gap-4 flex-wrap">
+                    {skills.map((e, i)=>(
+                        <DivBox key={i} style="border-0 px-4 py-2">{e}</DivBox>
+                    )
+                    )}
+                </ul>
+            </div>
+                
     </>
 }

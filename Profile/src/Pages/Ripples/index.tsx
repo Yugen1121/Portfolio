@@ -2,8 +2,7 @@ import {gsap} from "gsap";
 import { DyClass } from "../../Helper/DyClass";
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import "../../App.css";
-import img from "../../assets/pfp.png" 
-import img2 from "../../assets/bf1.png"
+
 function Ripples(){
     // gradiently changes the color o font
     let ref = useRef(null);
@@ -268,19 +267,10 @@ function Ripples(){
         <div ref={ref} className="relative min-h-[100vh] h-[100%] w-[100%] min-w-[100vw] bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-950  p-6 color1">
         <canvas
             ref={canvasRef}
-            className="fixed top-0 left-0 w-screen h-screen cursor-crosshair  z-0"
+            className="fixed top-0 left-0  h-screen cursor-crosshair  z-0"
             role="img"
         
-        />
-
-        <div className={
-            DyClass("absolute z-20 w-screen h-screen flex justify-center items-center")
-        }>
-            <h1> Used AI for ripple effect logic as it needs the understanding of physics. shaprened the code more for this result.</h1>
-        </div>        
-
-            
-
+        />  
         </div>
         
     </>
