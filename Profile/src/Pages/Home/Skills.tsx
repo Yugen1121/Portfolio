@@ -1,9 +1,9 @@
-import Tag from "../Components/SkillHighlighter.tsx"
+import Tag from "../Components/SkillHighlighter"
 import "../../App.css"
 import bg1 from "../../assets/orchids.png"
 import Python from "../../assets/Python.png"
 import Orchid from "../../assets/orchids.png"
-import DivBox from "../Components/divBox.tsx"
+import DivBox from "../Components/divBox"
 export default function Skills(){
     const skills = ["TypeScript", "JacaScript", "Java", "Python", "Flask", "Django", "Frontened", "Backened", "React"]
 

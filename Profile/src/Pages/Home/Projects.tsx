@@ -6,13 +6,13 @@ import FH3 from "../../assets/FH3.jpeg"
 import JavaIMG from "../../assets/Java1.webp"
 import VynalIMG from "../../assets/Vynal.png"
 import InventoryManagementIMG from "../../assets/InventoryManagement.jpeg"
-import FlexCard from "../Components/FlexCard.tsx"
-import DivBox from "../Components/divBox.tsx"
+import FlexCard from "../Components/FlexCard"
+import DivBox from "../Components/divBox"
 import Network from "../../assets/network.jpg"
 import ChattiIMG from "../../assets/Chatti.png"
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
-import { DyClass } from "../../Helper/DyClass.tsx";
+import { DyClass } from "../../Helper/DyClass";
 
 function Projects(){
     // reference

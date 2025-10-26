@@ -3,8 +3,8 @@ import './App.css'
 
 import { Route, Routes } from 'react-router-dom'
 // Compoonenets
-import Home from "./Pages/Home/Index.tsx"
-import Ripples from "./Pages/Ripples/index.tsx"
+import Home from "./Pages/Home/Index"
+import Ripples from "./Pages/Ripples/index"
 
 function App() {
   const [count, setCount] = useState(0)
