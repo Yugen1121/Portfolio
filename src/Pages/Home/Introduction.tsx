@@ -45,7 +45,7 @@ function Introduction(){
                     </a>
                     
                     
-                    <a className="sCard Focus" href="mailto:yugenlimbu777@2gamil.com">
+                    <a className="sCard Focus" href="mailto:yugenlimbu777@gamil.com">
                         <i className="fa fa-envelope"></i>
                         Gmail
                     </a>
