@@ -25,7 +25,7 @@ function Introduction(){
                         Yugen Limbu
                 </div>
                
-                <div className="Focus sm:text-2xl md:text-3xl text-4xl text-[var(--color-3)]">
+                <div className="Focus sm:text-2xl md:text-3xl lg:text-4xl text-2xl text-[var(--color-3)]">
                     Software Developer | CS student 
                 </div>
                 <div className="flex justify-center items] flex-wrap p-6 gap-3">
