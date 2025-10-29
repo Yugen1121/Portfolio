@@ -21,16 +21,14 @@ function Introduction(){
     return <>
 
             
-                <div className="text-[var(--color-10)]">
-                    <span className="Focus Highlight LText">
+                <div className="text-[var(--color-10 Focus Highlight LText">
                         Yugen Limbu
-                    </span>
                 </div>
                
-                <h2 className="Focus text-[var(--color-3)]">
+                <div className="Focus sm:text-2xl md:text-3xl text-4xl text-[var(--color-3)]">
                     Software Developer | CS student 
-                </h2>
-                <div className="flex flex-wrap p-6 gap-3">
+                </div>
+                <div className="flex justify-center items] flex-wrap p-6 gap-3">
                     
                     
                     <a ref={focusRef} className="sCard Focus" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yugen-limbu-aa869b33a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
