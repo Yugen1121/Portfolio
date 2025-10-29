@@ -42,11 +42,11 @@ export default function AboutMe(){
                                  <span className="text-red-700">Me</span>
                         </div>
                         <div className="flex items-center flex-col mb-8">
-                            <p  className="inline-block text-4xl m-3 bg-[var(--color-4)]">
+                            <p  className="inline-block md:text-4xl text-2xl m-3 bg-[var(--color-4)]">
                                 I'am an aspiring <span className="Focus text-red-700">Software Engineer</span> pursuing
                                  Bsc in Computer science specializing on Software Engineering at St Marys University.
                             </p>
-                            <p className="inline-block text-4xl m-3 bg-[var(--color-4)]">
+                            <p className="inline-block md:text-4xl text-2xl m-3 bg-[var(--color-4)]">
                                 Passionate about building efficient, scalable, and user-centered applications, I constantly explore new technologies and methodologies to enhance my skills and deliver exceptional software solutions.
                             </p>
 

@@ -22,7 +22,6 @@ function Introduction(){
 
             
                 <div className="text-[var(--color-10)]">
-                    <h3>Hi, my name is</h3>
                     <span className="Focus Highlight LText">
                         Yugen Limbu
                     </span>
