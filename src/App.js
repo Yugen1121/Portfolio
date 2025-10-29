@@ -7,6 +7,6 @@ import Home from "./Pages/Home/Index";
 import Ripples from "./Pages/Ripples/index";
 function App() {
     const [count, setCount] = useState(0);
-    return (_jsx(_Fragment, { children: _jsxs(Routes, { children: [_jsx(Route, { path: '/', element: _jsx(Home, {}) }), _jsx(Route, { path: "/Ripples", element: _jsx(Ripples, {}) })] }) }));
+    return (_jsx(_Fragment, { children: _jsxs(Routes, { children: [_jsx(Route, { path: '/Portfolio', element: _jsx(Home, {}) }), _jsx(Route, { path: "/Ripples", element: _jsx(Ripples, {}) })] }) }));
 }
 export default App;

@@ -3,5 +3,5 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-createRoot(document.getElementById('root')).render(_jsx(BrowserRouter, { children: _jsx(StrictMode, { children: _jsx(App, {}) }) }));
+import { HashRouter } from 'react-router-dom';
+createRoot(document.getElementById('root')).render(_jsx(HashRouter, { children: _jsx(StrictMode, { children: _jsx(App, {}) }) }));
